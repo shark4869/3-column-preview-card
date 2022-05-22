@@ -51,7 +51,7 @@ html {
     max-width: 33.3333%;
 }
 .card {
-    height: 500px;
+    min-height: 500px;
     border-radius: 5px;
     overflow: hidden;
 }
