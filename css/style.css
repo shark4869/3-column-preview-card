@@ -95,6 +95,7 @@ html {
     cursor: pointer;
     font-family: inherit;
     outline: none;
+    appearance: none;
 }
  .card-item:nth-of-type(1) .card__more {
   color: var(--Bright-orange);
