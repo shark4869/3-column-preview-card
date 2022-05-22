@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+:root {  
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --text-color: hsla(0, 0%, 100%, 0.75);
+    --background-headings-buttons: hsl(0, 0%, 95%);
+}
+* ,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--background-headings-buttons);
+}
+.main {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.grid {
+    width: 100%;
+    display: block;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.col {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.l-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.3333%;
+}
+.card {
+    
+    border-radius: 5px;
+    overflow: hidden;
+}
+.card-item {
+    
+    padding: 54px;
+}
+.card-item:nth-of-type(1)
+{
+    background-color: var(--Bright-orange);
+}
+.card-item:nth-of-type(2)
+{
+    background-color: var(--Dark-cyan);
+}
+.card-item:nth-of-type(3)
+{
+    background-color: var(--Very-dark-cyan);
+}
+
+.card__heading {
+    margin-top: 24px;
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    color: var(--background-headings-buttons);
+    font-family: 'Big Shoulders Display', cursive;
+}
+.card__desc {
+    margin-top: 24px;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    line-height: 2.2rem;
+}
+.card__more {
+    margin-top: 60px;
+    background-color: var(--background-headings-buttons);
+    border-radius: 30px;
+    border: none;
+    min-width: 130px;
+    height: 45px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    font-family: inherit;
+    
+}
+ .card-item:nth-of-type(1) .card__more {
+  color: var(--Bright-orange);
+}
+.card-item:nth-of-type(2) .card__more {
+    color: var(--Dark-cyan);
+}  
+.card-item:nth-of-type(3) .card__more {
+    color: var(--Very-dark-cyan);
+}   
+
+.card-item .card__more:hover {
+    background-color: unset;
+    border: 2px solid #fff;
+    color: #fff;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin-top: 20px;
+    font-family: inherit;
+}
+.attribution a { color: hsl(228, 45%, 44%);
+    }
+@media (max-width:700px)
+{
+    .c-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+   
+}
