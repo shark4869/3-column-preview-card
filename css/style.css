@@ -37,6 +37,7 @@ html {
     flex-wrap: wrap;
     margin-left: 0;
     margin-right: 0;
+    height: 100%;
 }
 
 .col {
@@ -50,7 +51,7 @@ html {
     max-width: 33.3333%;
 }
 .card {
-    
+    height: 500px;
     border-radius: 5px;
     overflow: hidden;
 }
@@ -84,33 +85,36 @@ html {
     color: var(--text-color);
     line-height: 2.2rem;
 }
-.card__more {
-    margin-top: 60px;
-    background-color: var(--background-headings-buttons);
+.btn {
     border-radius: 30px;
+    background-color: #fff;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 100px;
     border: none;
-    min-width: 130px;
-    height: 45px;
-    font-size: 1.4rem;
     cursor: pointer;
-    font-family: inherit;
-    outline: none;
-    appearance: none;
+    /* cho trình duyệt bình thường */
+    appearance: none; 
+    /* cho safari */
+    -webkit-appearance: none;
+ 
 }
- .card-item:nth-of-type(1) .card__more {
+.card-item .btn:hover {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff !important;
+}
+.card-item:nth-of-type(1) .btn {
   color: var(--Bright-orange);
 }
-.card-item:nth-of-type(2) .card__more {
+.card-item:nth-of-type(2) .btn {
     color: var(--Dark-cyan);
 }  
-.card-item:nth-of-type(3) .card__more {
+.card-item:nth-of-type(3) .btn {
     color: var(--Very-dark-cyan);
 }   
-.card-item .card__more:hover {
-    background-color: unset;
-    border: 2px solid #fff;
-    color: #fff;
-}
+
 .attribution { 
     font-size: 11px; 
     text-align: center;
@@ -125,5 +129,7 @@ html {
         flex: 0 0 100%;
         max-width: 100%;
     }
-   
+    .btn {
+        width: 100%;
+    }
 }
